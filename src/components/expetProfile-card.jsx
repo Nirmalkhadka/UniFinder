@@ -21,7 +21,7 @@ const UserProfile = ({
       <Arrow />
       <div className="user-info-box">
         <div className="user-css">
-          <h2 className="profile-title">{profile}</h2>
+          <h2 className="profile-title">Profile</h2>
 
           <div className="user-photo1">
             <img src={photoUrl} alt={name} />

@@ -7,13 +7,9 @@
   padding-top: 20px;
   padding-bottom: 2px;
 }
-<<<<<<< HEAD
 
-=======
-.footer{
-  padding-bottom: 3%;
-}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
+
 .contact-title {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -132,7 +128,7 @@ button:hover {
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
-<<<<<<< HEAD
+
     gap: 20px;  /* Reduced gap between the left and right sections */
   }
 
@@ -145,8 +141,7 @@ button:hover {
     flex: 1 1 100%;
     background-color: #f7f7f7;  /* Lighter background for better visibility */
     padding: 20px;  /* Increased padding for better mobile view */
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
   }
 
   .name-fields {
@@ -155,7 +150,7 @@ button:hover {
 
   .name-fields input {
     width: 100%;
-<<<<<<< HEAD
+
     margin-bottom: 10px;
   }
 
@@ -199,11 +194,7 @@ button:hover {
     font-size: 0.9rem; /* Smaller font size for status messages */
   }
 }
-=======
-  }
-}
 
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 .div-contact{
   text-align: center;
     background: linear-gradient(to right, #4f46e5, #8b5cf6);
@@ -218,7 +209,7 @@ button:hover {
   padding: 0;
     background: linear-gradient(to right, #4f46e5, #8b5cf6);
 
-<<<<<<< HEAD
+
 }
 .status-message {
   text-align: center;
@@ -229,6 +220,5 @@ button:hover {
 
 .status-message.error {
   color: #dc3545; /* Red color for error */
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
 }

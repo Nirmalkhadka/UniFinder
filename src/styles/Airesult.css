@@ -47,10 +47,9 @@ body {
   transition: transform 0.3s ease-in-out;
   max-width: 750px;
   margin: 0 auto;
-<<<<<<< HEAD
+
   cursor: pointer;
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
 }
 
 .course-card:hover {
@@ -80,7 +79,7 @@ body {
   color: #333;
 }
 
-<<<<<<< HEAD
+
 /* University Description Button and Description */
 .description-container {
   margin-top: 15px;
@@ -112,8 +111,6 @@ body {
   margin-right: auto;
 }
 
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 /* No courses found */
 .no-courses {
   text-align: center;
@@ -122,15 +119,8 @@ body {
   margin-top: 50px;
 }
 
-<<<<<<< HEAD
-=======
-/* Hover effect for course cards */
-.course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
 
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .title {

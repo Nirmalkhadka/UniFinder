@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useCallback, useState } from "react";
 import "../styles/Signup-expert.css";
 import "../styles/dropZone.css";
@@ -155,75 +154,7 @@ const SignupExpert = () => {
       <form onSubmit={handleSubmit}>
         {/* Photo Upload */}
         {/* <div className="form-group photo-upload">
-=======
-import React, { useState } from "react";
-import "../styles/Signup-expert.css";
-const SignupExpert = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    universityName: "",
-    major: "",
-    courseName: "",
-    countryName: "",
-    email: "",
-    password: "",
-    rePassword: "",
-    photo: null,
-  });
 
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
-  const [showRePassword, setShowRePassword] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({ ...prevState, [name]: value }));
-  };
-
-  const handlePhotoChange = (e) => {
-    setFormData((prevState) => ({ ...prevState, photo: e.target.files[0] }));
-  };
-
-  const validate = () => {
-    let errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!formData.firstName) errors.firstName = "First name is required";
-    if (!formData.lastName) errors.lastName = "Last name is required";
-    if (!formData.universityName)
-      errors.universityName = "University name is required";
-    if (!formData.major) errors.major = "Major is required";
-    if (!formData.courseName) errors.courseName = "Course name is required";
-    if (!formData.countryName) errors.countryName = "Country name is required";
-    if (!regex.test(formData.email))
-      errors.email = "Please enter a valid email";
-    if (!formData.password) errors.password = "Password is required";
-    if (formData.password !== formData.rePassword)
-      errors.rePassword = "Passwords do not match";
-    if (formData.password.length < 8)
-      errors.password = "Password must be at least 8 characters";
-
-    setFormErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validate()) {
-      localStorage.setItem("signupData", JSON.stringify(formData)); // Store form data in browser memory
-      setIsSubmitted(true);
-    }
-  };
-
-  return (
-    <div className="signup-container">
-      <h2>Signup</h2>
-      <form onSubmit={handleSubmit}>
-        {/* Photo Upload */}
-        <div className="form-group photo-upload">
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
           <label className="photo-circle">
             {formData.photo ? (
               <img
@@ -236,7 +167,7 @@ const SignupExpert = () => {
             )}
             <input type="file" name="photo" onChange={handlePhotoChange} />
           </label>
-<<<<<<< HEAD
+
         </div> */}
 
         <div className="dropZone-div" {...getRootProps()}>
@@ -255,27 +186,18 @@ const SignupExpert = () => {
 
 
 
-=======
-        </div>
 
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
         <div className="form-group">
           <label>First Name</label>
           <input
             type="text"
             name="firstName"
-<<<<<<< HEAD
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
           {/* {formErrors.firstName && <p>{formErrors.firstName}</p>} */}
-=======
-            value={formData.firstName}
-            onChange={handleChange}
-          />
-          {formErrors.firstName && <p>{formErrors.firstName}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
@@ -283,18 +205,12 @@ const SignupExpert = () => {
           <input
             type="text"
             name="lastName"
-<<<<<<< HEAD
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
           />
           {/* {formErrors.lastName && <p>{formErrors.lastName}</p>} */}
-=======
-            value={formData.lastName}
-            onChange={handleChange}
-          />
-          {formErrors.lastName && <p>{formErrors.lastName}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
@@ -302,35 +218,23 @@ const SignupExpert = () => {
           <input
             type="text"
             name="universityName"
-<<<<<<< HEAD
             value={universityName}
             onChange={(e) => setUniversityName(e.target.value)}
           />
           {/* {formErrors.universityName && <p>{formErrors.universityName}</p>} */}
-=======
-            value={formData.universityName}
-            onChange={handleChange}
-          />
-          {formErrors.universityName && <p>{formErrors.universityName}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
           <label>Major</label>
-<<<<<<< HEAD
           <select name="major" value={major} onChange={(e) => setMajor(e.target.value)}>
-=======
-          <select name="major" value={formData.major} onChange={handleChange}>
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
             <option value="">Select Major</option>
             <option value="undergraduate">Undergraduate</option>
             <option value="postgraduate">Postgraduate</option>
           </select>
-<<<<<<< HEAD
           {/* {formErrors.major && <p>{formErrors.major}</p>} */}
-=======
-          {formErrors.major && <p>{formErrors.major}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
@@ -338,17 +242,11 @@ const SignupExpert = () => {
           <input
             type="text"
             name="courseName"
-<<<<<<< HEAD
             value={courseName}
             onChange={(e) => setCourseName(e.target.value)}
           />
           {/* {formErrors.courseName && <p>{formErrors.courseName}</p>} */}
-=======
-            value={formData.courseName}
-            onChange={handleChange}
-          />
-          {formErrors.courseName && <p>{formErrors.courseName}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
@@ -356,17 +254,12 @@ const SignupExpert = () => {
           <input
             type="text"
             name="countryName"
-<<<<<<< HEAD
+
             value={countryName}
             onChange={(e) => setCountryName(e.target.value)}
           />
           {/* {formErrors.countryName && <p>{formErrors.countryName}</p>} */}
-=======
-            value={formData.countryName}
-            onChange={handleChange}
-          />
-          {formErrors.countryName && <p>{formErrors.countryName}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         <div className="form-group">
@@ -374,17 +267,12 @@ const SignupExpert = () => {
           <input
             type="email"
             name="email"
-<<<<<<< HEAD
+
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           {/* {formErrors.email && <p>{formErrors.email}</p>} */}
-=======
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {formErrors.email && <p>{formErrors.email}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         {/* Password */}
@@ -394,13 +282,10 @@ const SignupExpert = () => {
             <input
               type={showPassword ? "text" : "password"}
               name="password"
-<<<<<<< HEAD
+
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-=======
-              value={formData.password}
-              onChange={handleChange}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
             />
             <button
               type="button"
@@ -410,11 +295,9 @@ const SignupExpert = () => {
               👁️
             </button>
           </div>
-<<<<<<< HEAD
+
           {/* {formErrors.password && <p>{formErrors.password}</p>} */}
-=======
-          {formErrors.password && <p>{formErrors.password}</p>}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
         </div>
 
         {/* Re-password */}
@@ -424,13 +307,10 @@ const SignupExpert = () => {
             <input
               type={showRePassword ? "text" : "password"}
               name="rePassword"
-<<<<<<< HEAD
+
               value={rePassword}
               onChange={(e) => setRePassword(e.target.value)}
-=======
-              value={formData.rePassword}
-              onChange={handleChange}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
             />
             <button
               type="button"
@@ -440,7 +320,7 @@ const SignupExpert = () => {
               👁️
             </button>
           </div>
-<<<<<<< HEAD
+
           {/* {formErrors.rePassword && <p>{formErrors.rePassword}</p>} */}
         </div>
 
@@ -452,19 +332,7 @@ const SignupExpert = () => {
       {/* {isSubmitted && (
         <p>Signup successful! Your data is stored in the browser memory.</p>
       )} */}
-=======
-          {formErrors.rePassword && <p>{formErrors.rePassword}</p>}
-        </div>
 
-        <div className="form-group">
-          <button type="submit">Sign Up</button>
-        </div>
-      </form>
-
-      {isSubmitted && (
-        <p>Signup successful! Your data is stored in the browser memory.</p>
-      )}
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
     </div>
   );
 };

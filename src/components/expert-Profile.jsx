@@ -1,30 +1,28 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom'; // To get passed data
-
+import React from "react";
+import UserProfile from "./expetProfile-card"; // adjust the path if the file lives elsewhere
+import pho from "../assets/images/1.jpg";
 const ExpertProfile = () => {
-  const location = useLocation();
-  const { expertData, userRequests } = location.state || { expertData: null, userRequests: [] };
+  /**
+   * Dummy expert data. Replace or extend with real data once your API / backend is ready.
+   */
+  const experts = [
+    {
+      name: "Alice Johnson",
+      university: "Stanford University",
+      major: "Computer Science",
+      course: "Artificial Intelligence",
+      country: "United States",
+      photoUrl: pho,
+      email: "alice.johnson@example.com",
+    }
+  ];
 
   return (
-    <div>
-
-
-      <h2>Users Who Connected</h2>
-      <div className="user-requests">
-        {userRequests.map((user, index) => (
-          <div key={index} className="user-card">
-            <div className="user-info">
-              <img src={user.photo} alt={user.name} className="user-photo" />
-              <div className="user-details">
-                <h3>{user.name}</h3>
-                <p><strong>Email:</strong> {user.email}</p>
-                <p><strong>Area of Interest:</strong> {user.areaOfInterest}</p>
-              </div>
-            </div>
-            <button className="confirm-btn">Confirm Connect</button>
-          </div>
-        ))}
-      </div>
+    <div className="expert-profiles">
+      {experts.map((expert, index) => (
+        // Spread all properties so they align with the props expected by UserProfile
+        <UserProfile key={index} {...expert} />
+      ))}
     </div>
   );
 };

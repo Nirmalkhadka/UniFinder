@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "../styles/Login.css";
 import { toast, ToastContainer } from "react-toastify";
@@ -73,31 +72,7 @@ function Login({ setFirstName }) {
 
   }
 
-=======
-import { useNavigate } from "react-router-dom";
-import "../styles/Login.css";
 
-function Login({ setFirstName }) {
-  const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Get stored data from localStorage
-    const storedData = JSON.parse(localStorage.getItem("signupData"));
-    
-    // Check if email matches
-    if (storedData && storedData.email === email) {
-      setFirstName(storedData.firstName); // Update the first name in the Navbar component
-      navigate("/"); // Navigate to a dashboard or home page
-    } else {
-      setError("Invalid email or no account found.");
-    }
-  };
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 
   const handleBackArrow = () => {
     navigate("/"); // Navigate to HeroSection
@@ -109,7 +84,6 @@ function Login({ setFirstName }) {
 
   return (
     <div className="login-container">
-<<<<<<< HEAD
       <ToastContainer></ToastContainer>
       {/* Back arrow */}
       <button className="back-arrow" onClick={handleBackArrow} aria-label="Go back to HeroSection">
@@ -125,10 +99,6 @@ function Login({ setFirstName }) {
           className="feather feather-arrow-left"
           viewBox="0 0 24 24"
         >
-=======
-      <button className="back-arrow" onClick={handleBackArrow} aria-label="Go back to HeroSection">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#3f47cc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-left" viewBox="0 0 24 24">
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
           <line x1="19" y1="12" x2="5" y2="12" />
           <polyline points="12 19 5 12 12 5" />
         </svg>
@@ -137,11 +107,6 @@ function Login({ setFirstName }) {
       <form className="login-form" onSubmit={handleSubmit}>
         <h2 className="login-title">Login</h2>
 
-<<<<<<< HEAD
-        {/* <label htmlFor="name">Name</label>
-=======
-        <label htmlFor="name">Name</label>
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
         <input
           id="name"
           type="text"
@@ -149,27 +114,20 @@ function Login({ setFirstName }) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-<<<<<<< HEAD
-        /> */}
-=======
-        />
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+        /> 
+
 
         <label htmlFor="email">Email</label>
         <input
           id="email"
           type="email"
-<<<<<<< HEAD
           placeholder="Enter Your Registered Email"
-=======
-          placeholder="you@example.com"
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
 
-<<<<<<< HEAD
         <label htmlFor="password">Password</label>
         <input
           id="password"
@@ -181,17 +139,13 @@ function Login({ setFirstName }) {
         />
 
 
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
         <button type="submit" className="submit-btn">
           Submit
         </button>
 
-<<<<<<< HEAD
-=======
-        {error && <p className="error-text">{error}</p>}
 
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
+        {/* {error && <p className="error-text">{error}</p>} */}
+
         <p className="signup-text">
           Don't have an account?{" "}
           <button

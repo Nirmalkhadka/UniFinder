@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-=======
-import React from "react";
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 import { useLocation } from "react-router-dom";
 import "../styles/Airesult.css"; // Import the styles
 
@@ -23,14 +19,8 @@ const AiResults = () => {
                 <strong>University:</strong> {course.university_name}
               </p>
               <p>
-<<<<<<< HEAD
                 <strong>Course Level:</strong> {course.course_level}
               </p>
-=======
-                <strong>Couser Level:</strong> {course.course_level}
-              </p>
-
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
               <p>
                 <strong>GPA Requirement:</strong> {course.gpa_requirement}
               </p>
@@ -46,15 +36,9 @@ const AiResults = () => {
               <p>
                 <strong>Predicted Ranking:</strong> {course.predicted_ranking}
               </p>
-<<<<<<< HEAD
 
               {/* Toggle Button for University Description */}
               <UniversityDescription description={course.university_description} />
-=======
-              <p>
-                <strong>University Description:</strong> {course.university_description}
-              </p>
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
             </div>
           ))}
         </div>
@@ -65,7 +49,6 @@ const AiResults = () => {
   );
 };
 
-<<<<<<< HEAD
 // New component for University Description toggle
 const UniversityDescription = ({ description }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,6 +67,4 @@ const UniversityDescription = ({ description }) => {
   );
 };
 
-=======
->>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 export default AiResults;
