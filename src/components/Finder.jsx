@@ -46,7 +46,11 @@ const Finder = () => {
       </div>
 
       {/* Search Bar */}
+<<<<<<< HEAD
       {/* <div className="search-container">
+=======
+      <div className="search-container">
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
         <div className="search-bar">
           <input
             type="text"
@@ -55,7 +59,11 @@ const Finder = () => {
           />
           <button className="search-btn">Search</button>
         </div>
+<<<<<<< HEAD
       </div> */}
+=======
+      </div>
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 
       {/* Cards */}
       <div className="finder-cards">

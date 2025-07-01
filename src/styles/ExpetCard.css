@@ -9,7 +9,11 @@
 h1 {
   font-weight: bold;
   font-size: 24px;
+<<<<<<< HEAD
   /* display: flex; */
+=======
+  display: flex;
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   justify-content: center;
   /* margin-bottom: 20px; */
 }
@@ -72,7 +76,11 @@ h1 {
 }
 
 .date-time-section input {
+<<<<<<< HEAD
   margin:0 0 0 10px;
+=======
+  margin-left: 10px;
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   padding: 5px;
   border-radius: 5px;
 }

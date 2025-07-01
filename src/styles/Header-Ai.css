@@ -2,7 +2,11 @@
 .country-section2 {
   padding: 50px 20px;
   text-align: center;
+<<<<<<< HEAD
   background: linear-gradient(145deg, #F5F5F5, #E1E1E1); /* Subtle background gradient */
+=======
+  /* background-color: #f4f4f4; */
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .country-header {
@@ -13,7 +17,10 @@
   font-size: 36px;
   font-weight: bold;
   color: #2b2b2b;
+<<<<<<< HEAD
   animation: fadeIn 1s ease-out;
+=======
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .country-header p {
@@ -40,7 +47,11 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+<<<<<<< HEAD
   background: linear-gradient(to right, #4f46e5, #8b5cf6); /* indigo to purple */
+=======
+    background: linear-gradient(to right, #4f46e5, #8b5cf6); /* indigo to purple */
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   color: white;
   font-weight: bold;
   display: flex;
@@ -49,11 +60,14 @@
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
+<<<<<<< HEAD
   transition: transform 0.3s ease-in-out;
 }
 
 .step-circle:hover {
   transform: scale(1.1);
+=======
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .step-circle img {
@@ -65,7 +79,11 @@
 .step-line {
   width: 50px;
   height: 4px;
+<<<<<<< HEAD
   background: linear-gradient(to right, #4f46e5, #8b5cf6); /* indigo to purple */
+=======
+    background: linear-gradient(to right, #4f46e5, #8b5cf6); /* indigo to purple */
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   margin-top: 20px;
 }
 
@@ -76,11 +94,18 @@
   align-items: center;
   margin-bottom: 40px;
   padding: 20px;
+<<<<<<< HEAD
   background: linear-gradient(to right, #4f46e5, #8b5cf6); /* Adding gradient */
   color: white;
   border-radius: 10px;
   overflow: hidden;
   animation: fadeInUp 1.5s ease-out;
+=======
+  /* background: linear-gradient(to right, #4f46e5, #8b5cf6);  */
+  color: rgb(13, 13, 13);
+  border-radius: 10px;
+  overflow: hidden;
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .intro-text {
@@ -91,21 +116,32 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
+<<<<<<< HEAD
   text-transform: uppercase;
   animation: slideInLeft 1s ease-out;
+=======
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .intro-text p {
   font-size: 18px;
+<<<<<<< HEAD
   animation: slideInLeft 1s ease-out;
 }
 
 .intro-image {
   max-width: 35%;
+=======
+}
+
+.intro-image {
+  max-width: 10%;
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 }
 
 .intro-image img {
   width: 100%;
+<<<<<<< HEAD
   height: 118px;
   object-fit: cover;
   border-radius: 8px;
@@ -149,3 +185,12 @@
     transform: translateX(0);
   }
 }
+=======
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.h1-header{
+    display: block;
+}
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b

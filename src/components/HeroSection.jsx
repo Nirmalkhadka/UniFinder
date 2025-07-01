@@ -18,6 +18,7 @@ const HeroSection = () => {
     //   alert("Please log in to access this feature.");
     // } else {
       // Navigate to the finder page if logged in
+<<<<<<< HEAD
       const fetchedToken =  localStorage.getItem("token");
       if(fetchedToken){
         navigate('/finder');
@@ -27,6 +28,9 @@ const HeroSection = () => {
       }
 
       
+=======
+      navigate('/finder');
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
     // }
   };
 

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Updated to useNavigate
 import '../styles/Expert.css';
+<<<<<<< HEAD
 import Arrow from './arrow';
+=======
+
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
 const universities = [
   'UNIVERSITY OF TECHNOLOGY SYDNEY', 'QUEENSLAND UNIVERSITY OF TECHNOLOGY', 'RMIT UNIVERSITY', 
   'THE UNIVERSITY OF NEW SOUTH WALES', 'THE UNIVERSITY OF MELBOURNE', 'WESTERN SYDNEY UNIVERSITY',
@@ -66,7 +70,10 @@ const Expert = () => {
 
   return (
     <div className="expert-page">
+<<<<<<< HEAD
       <Arrow/>
+=======
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
       <h1>Connect to Our University Experts</h1>
       <div className="search-bar">
         <input 

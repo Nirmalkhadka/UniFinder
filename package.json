@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "vite-project",
+=======
+  "name": "package.json",
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +16,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^1.10.0",
+<<<<<<< HEAD
     "bootstrap": "^5.3.6",
     "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
@@ -32,5 +37,27 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "vite": "^6.3.5"
+=======
+    "bootstrap": "^5.3.5",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "vite": "^6.3.1"
+>>>>>>> 879ac6187cd07a49d283478c23b41d2c8932658b
   }
 }
